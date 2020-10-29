@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url("ic flag-02.jpeg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+/**HeaderStyles**/
+.Header{
+  background:url("imageslime.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  border: 2px solid black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height:100px;
+  width:auto;
+}
+
+.headertext{
+  position: relative;
+  top: 5px;
+font-family: Garamond, sans-serif;
+color: white;
+text-align: center;
+animation-name: headerAnim;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease;
+}
+
+.Isilogo{
+  height: 100px;
+  width:80px;
+  position: relative;
+  left: 20px;
+  bottom:64px;
+  border:0;
+
+}
+/**HeaderAnimate**/
+
+@keyframes headerAnim {
+    from {color:black}
+    to {color:white}
+}
+
+#headchild{
+display:block;
+position:relative;
+font-family:Garamond,serif;
+font-size: 50px;
+bottom: 5px;
+text-align: center;
+}
+
+/**Navigate**/
+#Navlstmain{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ .active,.dropdown,.Navlst {/**li**/
+
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:50px;
+}
+
+.active a,.Navlst a, .dropbtn {
+    font-family: Garamond,sans-serif;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ .active:hover,.Navlst:hover, .dropdown:hover {
+  color:white;
+  background-color: rgb(16, 111, 51);;
+}
+
+.active {
+    display: inline-block;
+    color: #111;
+    background-color: rgb(16, 111, 51);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+
+  border-radius: 10px;
+  background-color: #f1f1f1
+}
+
+.active:hover .dropdown-content,.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+
+#intro{
+     font-size: 30px;
+     font-style: italic;
+     font-family:'Encode Sans',sans-serif;
+     color: black;
+     text-align: center;
+     display: block;
+     position:relative;
+     right: 20px;
+}
+
+/**Content**/
+
+.Societymain{
+  margin-left: auto;
+  margin-right: auto;
+   width:800px;
+  text-align: center;
+  font-family: Algerian;
+  display: block;
+  position: relative;
+  top:20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(28, 223, 83);
+}
+
+
+.SocietyH{
+  display: block;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+ul{
+list-style-type: disc;
+}
+
+ .Societylst{
+
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.SocietyImg{
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom:10px;
+}
+
+.SocietyImgcol1{
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom:10px;
+}
+
+.SocietyImgcol2{
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-bottom:10px;
+}
+.arrogantlst{
+
+  display: block;
+  position: relative;
+  top:20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.transbox1.arrogant{
+  margin-left: 40px;
+}
+
+
+.transbox1{
+  margin-top: 5px;
+  margin-left: 20px;
+  position:relative;
+  padding:5px;
+  background-color: white;
+  opacity: 0.7;
+  border:1px solid black;
+  width:700px;
+  height:150px;
+   transition: width 1s;
+}
+
+.transbox1:hover {
+    width: 1200px;
+}
